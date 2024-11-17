@@ -1,7 +1,9 @@
 {
 	"name": "ContainerEventTrigger",
 	"properties": {
-		"annotations": [],
+		"annotations": [
+			"test3"
+		],
 		"runtimeState": "Started",
 		"pipelines": [
 			{
