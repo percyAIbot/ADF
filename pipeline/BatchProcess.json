@@ -61,7 +61,16 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": "olympicdata/raw-data/Dump/*"
+								},
+								{
+									"name": "Destination",
+									"value": "olympicdata/raw-data/RawDump/@{concat(pipeline().TriggerTime,'-',item().name)}"
+								}
+							],
 							"typeProperties": {
 								"source": {
 									"type": "BinarySource",
