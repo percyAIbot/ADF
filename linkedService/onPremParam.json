@@ -1,0 +1,26 @@
+{
+	"name": "onPremParam",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"DbName": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost",
+			"database": "@{linkedService().DbName}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "sasidhar",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjZGYyMTk5YS0wMDE1LTRiZWMtYTVlMi1hZjM1YWIyNTk4OTciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "UzumakiRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
