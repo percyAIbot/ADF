@@ -1,0 +1,9 @@
+{
+	"name": "khubDF",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7d1400be-1b2c-41f9-939b-f629f15ebffc",
+		"tenantId": "94e1538a-3b46-4d3f-b78c-1f1613e4b6a2"
+	}
+}

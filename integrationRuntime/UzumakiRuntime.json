@@ -1,0 +1,6 @@
+{
+	"name": "UzumakiRuntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

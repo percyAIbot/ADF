@@ -1,0 +1,21 @@
+{
+	"name": "OnPremSQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost",
+			"database": "AdventureWorks2017",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "sasidhar",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlNGQyNzdiYy0xOTI4LTQ5MmMtOGI4YS0xOTE2ZGVmNzk2YjEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "UzumakiRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
