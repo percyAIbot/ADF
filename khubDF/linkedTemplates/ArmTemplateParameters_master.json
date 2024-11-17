@@ -8,10 +8,16 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
 		"GitHub_credential": {
 			"value": ""
 		},
 		"OnPremSQL_password": {
+			"value": ""
+		},
+		"onPremParam_password": {
 			"value": ""
 		},
 		"AthletesGitRaw_properties_typeProperties_url": {
@@ -19,6 +25,15 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://khubadfstorage.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "khubsql.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "master"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "sasidhar"
 		},
 		"CoachesGitRaw_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Coaches.csv"
@@ -43,6 +58,18 @@
 		},
 		"TeamsGitRaw_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Teams.csv"
+		},
+		"onPremParam_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"onPremParam_properties_typeProperties_database": {
+			"value": "@{linkedService().DbName}"
+		},
+		"onPremParam_properties_typeProperties_userName": {
+			"value": "sasidhar"
+		},
+		"ContainerEventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/4baa01ac-7bfb-4776-bb63-876a9d8b46a9/resourceGroups/ADF-LAB/providers/Microsoft.Storage/storageAccounts/khubadfstorage"
 		},
 		"containerUri": {
 			"value": ""

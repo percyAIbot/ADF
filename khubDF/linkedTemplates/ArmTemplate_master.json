@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
 		"GitHub_credential": {
 			"type": "secureString",
 			"metadata": "Secure string for 'credential' of 'GitHub'"
@@ -19,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'OnPremSQL'"
 		},
+		"onPremParam_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'onPremParam'"
+		},
 		"AthletesGitRaw_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Athletes.csv"
@@ -26,6 +34,18 @@
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://khubadfstorage.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "khubsql.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "master"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sasidhar"
 		},
 		"CoachesGitRaw_properties_typeProperties_url": {
 			"type": "string",
@@ -59,6 +79,22 @@
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Teams.csv"
 		},
+		"onPremParam_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost"
+		},
+		"onPremParam_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "@{linkedService().DbName}"
+		},
+		"onPremParam_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sasidhar"
+		},
+		"ContainerEventTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/4baa01ac-7bfb-4776-bb63-876a9d8b46a9/resourceGroups/ADF-LAB/providers/Microsoft.Storage/storageAccounts/khubadfstorage"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -89,6 +125,9 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
 					"GitHub_credential": {
 						"value": "[parameters('GitHub_credential')]"
 					},
@@ -97,6 +136,15 @@
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
 					},
 					"CoachesGitRaw_properties_typeProperties_url": {
 						"value": "[parameters('CoachesGitRaw_properties_typeProperties_url')]"
@@ -134,6 +182,9 @@
 					"OnPremSQL_password": {
 						"value": "[parameters('OnPremSQL_password')]"
 					},
+					"onPremParam_password": {
+						"value": "[parameters('onPremParam_password')]"
+					},
 					"OnPremSQL_properties_typeProperties_server": {
 						"value": "[parameters('OnPremSQL_properties_typeProperties_server')]"
 					},
@@ -142,6 +193,18 @@
 					},
 					"OnPremSQL_properties_typeProperties_userName": {
 						"value": "[parameters('OnPremSQL_properties_typeProperties_userName')]"
+					},
+					"onPremParam_properties_typeProperties_server": {
+						"value": "[parameters('onPremParam_properties_typeProperties_server')]"
+					},
+					"onPremParam_properties_typeProperties_database": {
+						"value": "[parameters('onPremParam_properties_typeProperties_database')]"
+					},
+					"onPremParam_properties_typeProperties_userName": {
+						"value": "[parameters('onPremParam_properties_typeProperties_userName')]"
+					},
+					"ContainerEventTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('ContainerEventTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
