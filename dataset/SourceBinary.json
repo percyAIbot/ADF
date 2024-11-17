@@ -1,5 +1,5 @@
 {
-	"name": "Binary1",
+	"name": "SourceBinary",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "*",
-				"folderPath": "HumanResources",
+				"folderPath": "raw-data/Dump",
 				"fileSystem": "olympicdata"
 			}
 		}
