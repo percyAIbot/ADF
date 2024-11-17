@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "khubDF"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"GitHub_credential": {
+			"value": ""
+		},
+		"OnPremSQL_password": {
+			"value": ""
+		},
+		"AthletesGitRaw_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Athletes.csv"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://khubadfstorage.dfs.core.windows.net/"
+		},
+		"CoachesGitRaw_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Coaches.csv"
+		},
+		"EntriesGenderGitRaw_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/EntriesGender.csv"
+		},
+		"GitHub_properties_typeProperties_username": {
+			"value": "odl_user_1510914@cloudlabssandbox.onmicrosoft.com"
+		},
+		"MedalsGitRaw_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Medals.csv"
+		},
+		"OnPremSQL_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"OnPremSQL_properties_typeProperties_database": {
+			"value": "AdventureWorks2017"
+		},
+		"OnPremSQL_properties_typeProperties_userName": {
+			"value": "sasidhar"
+		},
+		"TeamsGitRaw_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/percyAIbot/tokyo-olympic-azure-data-engineering-project/refs/heads/main/data/Teams.csv"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
