@@ -99,7 +99,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"filename": {
-											"value": "@item().name",
+											"value": "@{concat(pipeline().TriggerTime,'-',item().name)}",
 											"type": "Expression"
 										}
 									}
