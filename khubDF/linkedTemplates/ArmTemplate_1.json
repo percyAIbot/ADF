@@ -374,7 +374,16 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
+									"userProperties": [
+										{
+											"name": "Source",
+											"value": "olympicdata/raw-data/Dump/*"
+										},
+										{
+											"name": "Destination",
+											"value": "olympicdata/raw-data/RawDump/@{concat(pipeline().TriggerTime,'-',item().name)}"
+										}
+									],
 									"typeProperties": {
 										"source": {
 											"type": "BinarySource",
@@ -427,7 +436,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"annotations": []
+				"annotations": [
+					"test"
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/SourceBinary')]",
