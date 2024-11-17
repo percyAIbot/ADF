@@ -1923,11 +1923,23 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/UzumakiRuntime')]",
+			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "SelfHosted",
+				"typeProperties": {}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/ContainerEventTrigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
+				"annotations": [
+					"test3"
+				],
 				"runtimeState": "Started",
 				"pipelines": [
 					{
@@ -1951,16 +1963,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/BatchProcess')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/UzumakiRuntime')]",
-			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "SelfHosted",
-				"typeProperties": {}
-			},
-			"dependsOn": []
 		}
 	]
 }

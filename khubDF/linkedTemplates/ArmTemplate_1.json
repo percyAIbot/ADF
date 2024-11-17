@@ -1393,7 +1393,9 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
+				"annotations": [
+					"test3"
+				],
 				"runtimeState": "Started",
 				"pipelines": [
 					{
