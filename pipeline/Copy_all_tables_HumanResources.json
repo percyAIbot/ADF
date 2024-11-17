@@ -1,5 +1,5 @@
 {
-	"name": "Copy_all_tables",
+	"name": "Copy_all_tables_HumanResources",
 	"properties": {
 		"activities": [
 			{
@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "select\ns.name AS SchemaName,\nt.name AS TableName\nFROM sys.tables t\nINNER JOIN sys.schemas s\nON t.schema_id = s.schema_id\nWHERE s.name = 'Sales'",
+						"sqlReaderQuery": "select\ns.name AS SchemaName,\nt.name AS TableName\nFROM sys.tables t\nINNER JOIN sys.schemas s\nON t.schema_id = s.schema_id\nWHERE s.name = 'HumanResources'",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
