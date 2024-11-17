@@ -1,0 +1,27 @@
+{
+	"name": "Target1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Variable1",
+					"value": "abc"
+				}
+			}
+		],
+		"variables": {
+			"Variable1": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
