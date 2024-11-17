@@ -1,5 +1,5 @@
 {
-	"name": "Raw Ingestion Pipeline",
+	"name": "Ingestion  from GITHUB HTTPS",
 	"properties": {
 		"activities": [
 			{
