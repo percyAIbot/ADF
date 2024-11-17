@@ -110,6 +110,8 @@
 				}
 			}
 		],
-		"annotations": []
+		"annotations": [
+			"test"
+		]
 	}
 }
