@@ -2,7 +2,9 @@
 	"name": "khubDF",
 	"properties": {
 		"globalConfigurations": {
-			"PipelineBillingEnabled": "true"
+			"PipelineBillingEnabled": "true",
+			"factoryStagingLSReferenceName": "AzureDataLakeStorage1",
+			"factoryStagingLSType": "LinkedServiceReference"
 		}
 	},
 	"location": "uksouth",
